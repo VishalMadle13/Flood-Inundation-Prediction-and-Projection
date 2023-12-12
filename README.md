@@ -17,3 +17,17 @@ Artificial Neural Network and Long Short-Term Memory
 - Django Framework
 - Folium Map
 - Tailwindcss
+
+ 
+
+## Model Architecture
+
+![Model Architecture](https://github.com/VishalMadle13/Flood-Inundation-Prediction-and-Projection/raw/main/Model%20Architecture.png)
+
+## Use Cases
+
+![Use Cases](https://github.com/VishalMadle13/Flood-Inundation-Prediction-and-Projection/raw/main/Use%20Cases.png)
+
+## Sample Prediction
+
+![Sample Prediction](https://github.com/VishalMadle13/Flood-Inundation-Prediction-and-Projection/raw/main/Sample%20Prediction.png)
