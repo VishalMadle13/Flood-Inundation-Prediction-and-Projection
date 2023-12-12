@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_53acd9e855c047d75ff75925d589bf1d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_53acd9e855c047d75ff75925d589bf1d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_53acd9e855c047d75ff75925d589bf1d = L.map(
+                "map_53acd9e855c047d75ff75925d589bf1d",
+                {
+                    center: [16.853994, 74.5394469],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8c563a6e884d96ff3caf6a05a86101c7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_8c563a6e884d96ff3caf6a05a86101c7.addTo(map_53acd9e855c047d75ff75925d589bf1d);
+        
+    
+            var polygon_404373ef3535ee440461193d8301f11d = L.polygon(
+                [[16.8544048, 74.5388676], [16.8542815, 74.5390607], [16.8541378, 74.5392216], [16.853994, 74.5394469], [16.8537681, 74.5396508], [16.8535628, 74.5398332], [16.853378, 74.54008], [16.8531726, 74.5403053], [16.852998, 74.5404876], [16.8527927, 74.5407237], [16.8526181, 74.5408953], [16.852423, 74.5411099], [16.8522587, 74.541346], [16.8521047, 74.5415605], [16.8522895, 74.5417215], [16.8524846, 74.5418609], [16.85269, 74.5420433], [16.8527619, 74.5421077], [16.8529159, 74.541936], [16.8530699, 74.5417751], [16.8532137, 74.5415391], [16.8533574, 74.5412816], [16.8534704, 74.5409919], [16.8535833, 74.5407988], [16.8537784, 74.5405949], [16.8539632, 74.5403804], [16.8541583, 74.5402194], [16.8543329, 74.5400478], [16.8545177, 74.5398546], [16.8546615, 74.5397366], [16.8548257, 74.5395328], [16.8549284, 74.5394469], [16.8547847, 74.5393075], [16.8546409, 74.5391787], [16.8544972, 74.5390178], [16.8544048, 74.5388676]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_53acd9e855c047d75ff75925d589bf1d);
+        
+    
+        var popup_7c4e59f0e431d5a12d45f34697932b82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bec7f1295648b4322687c491c4f82ce1 = $(`<div id="html_bec7f1295648b4322687c491c4f82ce1" style="width: 100.0%; height: 100.0%;">Current River Water  Boundary</div>`)[0];
+                popup_7c4e59f0e431d5a12d45f34697932b82.setContent(html_bec7f1295648b4322687c491c4f82ce1);
+            
+        
+
+        polygon_404373ef3535ee440461193d8301f11d.bindPopup(popup_7c4e59f0e431d5a12d45f34697932b82)
+        ;
+
+        
+    
+    
+            var polygon_a355eaeecf5ec44a95ad7da1bf2db29a = L.polygon(
+                [[16.8536504, 74.5381495], [16.8533013, 74.5383104], [16.8531473, 74.5385572], [16.8529419, 74.5388147], [16.8526339, 74.5390507], [16.8523977, 74.5392868], [16.8520897, 74.5394477], [16.8518741, 74.5397267], [16.8516584, 74.5400271], [16.8513812, 74.5403167], [16.8512169, 74.5405528], [16.8510115, 74.5407459], [16.8508062, 74.5410463], [16.8506419, 74.5414004], [16.8505187, 74.5416471], [16.8503441, 74.5419475], [16.8504365, 74.5421192], [16.8506932, 74.542441], [16.8508986, 74.5426985], [16.8512169, 74.5430097], [16.8515352, 74.5432028], [16.8518843, 74.5433852], [16.8521513, 74.5436319], [16.8524799, 74.5438143], [16.8527879, 74.5440933], [16.8530857, 74.5442328], [16.853404, 74.5444259], [16.8535478, 74.544222], [16.8537223, 74.5440504], [16.8538661, 74.5438251], [16.8540612, 74.5435998], [16.8541844, 74.543353], [16.8543897, 74.5429775], [16.8545746, 74.5427093], [16.8547799, 74.5423767], [16.8549237, 74.5421514], [16.8550674, 74.541851], [16.8551701, 74.5416042], [16.8553344, 74.5414325], [16.8554473, 74.5410892], [16.8555808, 74.5408317], [16.8556938, 74.540585], [16.8558786, 74.5403811], [16.8557246, 74.540188], [16.8554576, 74.539952], [16.8552317, 74.5397052], [16.8550058, 74.5394262], [16.8547594, 74.539158], [16.8545643, 74.5389005], [16.8542973, 74.5387074], [16.8540817, 74.5385143], [16.8538763, 74.5383426], [16.8536504, 74.5381495]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_53acd9e855c047d75ff75925d589bf1d);
+        
+    
+        var popup_4f342e3ff082a226391fb17c13f42ba6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08f3845ce9582b0a9f2470f6651d8ac9 = $(`<div id="html_08f3845ce9582b0a9f2470f6651d8ac9" style="width: 100.0%; height: 100.0%;">Predicted River Water Boundary</div>`)[0];
+                popup_4f342e3ff082a226391fb17c13f42ba6.setContent(html_08f3845ce9582b0a9f2470f6651d8ac9);
+            
+        
+
+        polygon_a355eaeecf5ec44a95ad7da1bf2db29a.bindPopup(popup_4f342e3ff082a226391fb17c13f42ba6)
+        ;
+
+        
+    
+</script>
+</html>

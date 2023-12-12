@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.41 13.41l-4.24-4.24-1.42 1.42 5.66 5.66 12-12-1.42-1.42-10.58 10.58z"></path>
+            </svg>
+            <span class="ml-3 text-xl">Flood Inundation and Projection</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            {% comment %} <a class="mr-5 hover:text-gray-900">First Link</a>
+            <a class="mr-5 hover:text-gray-900">Second Link</a>
+            <a class="mr-5 hover:text-gray-900">Third Link</a>
+            <a class="mr-5 hover:text-gray-900">Fourth Link</a> {% endcomment %}
+          </nav>
+          <a href="{% url 'about' %}"><button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">About
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button></a>
+        </div>
+      </header>
+      <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Flood inundation
+              <br class="hidden lg:inline-block">and Projection
+            </h1>
+            <p class="mb-8 leading-relaxed">This AI-ML-based application is a promising solution to the 
+                perennial problem of flood management in India. To mitigate the adverse impact of floods by 
+                enhancing the availability of timely and precise information, ultimately 
+                contributing to more informed decision-making and improved emergency 
+                response measures in flood-prone regions.</p>
+            <div class="flex justify-center">
+              <a href="{% url 'maps' %}"><button class="inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg">Get Started</button></a>
+              {% comment %} <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button> {% endcomment %}
+            </div>
+          </div>
+          <div class="lg:max-w-xlg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded" alt="region" src="static\images\region.png">
+          </div>
+        </div>
+      </section>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="text-center mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">Predictive Flood Management</h1>
+            <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Utilize advanced algorithms to predict potential flood extents to generate inundation maps that visualize the projected flood extents</p>
+          </div>
+          <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+            <div class="p-2 sm:w-1/2 w-full">
+              <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-purple-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                  <path d="M22 4L12 14.01l-3-3"></path>
+                </svg>
+                <span class="title-font font-medium">Flood Risk Assessment</span>
+              </div>
+            </div>
+            <div class="p-2 sm:w-1/2 w-full">
+              <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-purple-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                  <path d="M22 4L12 14.01l-3-3"></path>
+                </svg>
+                <span class="title-font font-medium">Early Warning System</span>
+              </div>
+            </div>
+            <div class="p-2 sm:w-1/2 w-full">
+              <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-purple-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                  <path d="M22 4L12 14.01l-3-3"></path>
+                </svg>
+                <span class="title-font font-medium">Emergency Response</span>
+              </div>
+            </div>
+            <div class="p-2 sm:w-1/2 w-full">
+              <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-purple-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                  <path d="M22 4L12 14.01l-3-3"></path>
+                </svg>
+                <span class="title-font font-medium">Disaster Recovery and Relief</span>
+              </div>
+            </div>
+            <div class="p-2 sm:w-1/2 w-full">
+              <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-purple-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                  <path d="M22 4L12 14.01l-3-3"></path>
+                </svg>
+                <span class="title-font font-medium">Predictive Modeling</span>
+              </div>
+            </div>
+            <div class="p-2 sm:w-1/2 w-full">
+              <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-purple-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                  <path d="M22 4L12 14.01l-3-3"></path>
+                </svg>
+                <span class="title-font font-medium">Environmental Impact Assessment</span>
+              </div>
+            </div>
+          </div>
+          <a href="{% url 'maps' %}"><button class="flex mx-auto mt-16 text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg">Preview</button></a>
+        </div>
+      </section>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
+            <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900">From projections to protection - System turns data into action, protecting lives and livelihoods, more prepared tomorrow.</h1>
+            <a href="{% url 'maps' %}"><button class="flex-shrink-0 text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg mt-10 sm:mt-0">Get Started</button></a>
+          </div>
+        </div>
+      </section>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap flex-col">
+          <div class="flex mx-auto flex-wrap mb-20">
+            <a id="step1" onclick="toggleContent('step1')" class="step-anchor sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider rounded-t cursor-pointer">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 mr-3" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>STEP 1
+            </a>
+            <a id="step2" onclick="toggleContent('step2')" class="step-anchor sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider rounded-t cursor-pointer">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 mr-3" viewBox="0 0 24 24">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+              </svg>STEP 2
+            </a>
+            <a id="step3" onclick="toggleContent('step3')" class="step-anchor sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider rounded-t cursor-pointer">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 mr-3" viewBox="0 0 24 24">
+                <circle cx="12" cy="5" r="3"></circle>
+                <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+              </svg>STEP 3
+            </a>
+            <a id="step4" onclick="toggleContent('step4')" class="step-anchor sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider rounded-t cursor-pointer">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 mr-3" viewBox="0 0 24 24">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>STEP 4
+            </a>
+          </div>
+          <img id="contentImage" class="xl:w-1/4 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded" alt="hero" src="https://i.pinimg.com/originals/1e/ef/41/1eef419c0d2f925c24057cb6fc76f530.gif">
+          <div class="flex flex-col text-center w-full">
+            <h1 id="contentTitle" class="text-xl font-medium title-font mb-4 text-gray-900">Prediction</h1>
+            <p id="contentText" class="lg:w-2/3 mx-auto leading-relaxed text-base">Utilizing advanced modeling techniques to predict the spatial extent of potential flooding based on various factors such as rainfall, flowrate, water level, temprature and soil quality.</p>
+          </div>
+        </div>
+      </section>
+      <style>
+        /* Styles for selected anchor tags */
+        .step-anchor.selected {
+          background-color: #F7FAFC;
+          border: 2px solid #9F7AEA;
+          color: #9F7AEA;
+        }
+      
+        /* Hover effect for all anchor tags */
+        .step-anchor:hover {
+          background-color: #e6e6e6;
+          cursor: pointer;
+        }
+      </style>
+      <script>
+        document.getElementById('step1').classList.add('selected');
+
+        function toggleContent(step) {
+          document.querySelectorAll('.step-anchor').forEach(function(anchor) {
+            anchor.classList.remove('selected');
+          });
+          document.getElementById(step).classList.add('selected');
+          // Replace image, title, and text based on the step
+          switch (step) {
+            case 'step1':
+              document.getElementById('contentImage').src = 'https://i.pinimg.com/originals/1e/ef/41/1eef419c0d2f925c24057cb6fc76f530.gif';
+              document.getElementById('contentTitle').innerText = 'Prediction';
+              document.getElementById('contentText').innerText = 'Utilizing advanced modeling techniques to predict the spatial extent of potential flooding based on various factors such as rainfall, flowrate, water level, temprature and soil quality.';
+              break;
+            case 'step2':
+              document.getElementById('contentImage').src = 'https://i.pinimg.com/originals/18/91/e5/1891e54ef2f3eb9179622c98c68f26bc.gif';
+              document.getElementById('contentTitle').innerText = 'Inundation';
+              document.getElementById('contentText').innerText = 'Process of mapping and predicting the extent of floodwaters, illustrating areas at risk of submersion during a flood event.';
+              break;
+            case 'step3':
+              document.getElementById('contentImage').src = 'https://i.pinimg.com/originals/a0/2a/38/a02a384b26ef2eb43b001177e656dc2e.gif';
+              document.getElementById('contentTitle').innerText = 'Projection';
+              document.getElementById('contentText').innerText = ' Integrating geographical data to project and assess the potential impact of future flood events, considering various scenarios and climate change factors.';
+              break;
+            case 'step4':
+              document.getElementById('contentImage').src = 'https://i.pinimg.com/originals/98/53/8b/98538be65a1d076591461703fb239c45.gif';
+              document.getElementById('contentTitle').innerText = 'Visualization';
+              document.getElementById('contentText').innerText = 'Presents the projected flood information through graphical representations and interactive maps, enhancing understanding and facilitating decision-making for stakeholders and the public.';
+              break;
+          }
+        }
+      </script>
+      <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.41 13.41l-4.24-4.24-1.42 1.42 5.66 5.66 12-12-1.42-1.42-10.58 10.58z"></path>
+            </svg>
+            <span class="ml-3 text-xl">Flood Inundation and Projection</span>
+          </a>
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 All rights reserved — 
+            <a href="https://www.bing.com/ck/a?!&&p=ffa6970adb87377eJmltdHM9MTcwMjE2NjQwMCZpZ3VpZD0xYzcwNjNkYy0yNGYwLTY4N2UtMDg1Yy02YzEyMjU2YjY5MDEmaW5zaWQ9NTgzOQ&ptn=3&ver=2&hsh=3&fclid=1c7063dc-24f0-687e-085c-6c12256b6901&psq=walchand+college+of+engineering+sangli&u=a1aHR0cHM6Ly9iaW5nLmNvbS9hbGluay9saW5rP3VybD1odHRwJTNhJTJmJTJmd3d3LndhbGNoYW5kc2FuZ2xpLmFjLmluJTJmJnNvdXJjZT1zZXJwLXJyJmg9QjJSaXNJZHNJWjFtQUY2UnlRY3olMmJPU1ZDajhtV0U2TSUyZjVTRER3Z2ZRTFElM2QmcD1rY29mZmNpYWx3ZWJzaXRl&ntb=1" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">WCE</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer>
+</body>
+</html>
