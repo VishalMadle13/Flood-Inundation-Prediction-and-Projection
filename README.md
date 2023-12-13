@@ -14,6 +14,7 @@ Artificial Neural Network and Long Short-Term Memory
 
 # Technologies
 - ANN + LSTM Merged Model
+- TensorFlow, Keras
 - Django Framework
 - Folium Map
 - Tailwindcss
